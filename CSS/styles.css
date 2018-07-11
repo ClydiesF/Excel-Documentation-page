@@ -3,6 +3,7 @@
 body {
     max-width:1000px;
     margin: auto;
+    background-color: rgba(185, 184, 197, 0.473);
 }
 
 
@@ -10,12 +11,14 @@ body {
      float: left;
      background-color: bisque;
      width: 30%;
-     height: 600px;
+     /* height: 600px; */
      padding-left: 10px;
+     border-radius: 5px;
+     border: solid 1px lightgrey;
  }
 
  button {
-     display: block;
+     /* display: block; */
      width: 100%;
      border: none;
      background-color: inherit;
@@ -26,22 +29,57 @@ body {
 
  }
  button:hover {
-     background-color: blanchedalmond;
+     background-color: sandybrown;
  }
 
 
  .active {
-     background-color: red;
+     background-color: seagreen;
  }
 
  /** STYLING FOR THE TAB CONTENT **/ 
 
  .content {
-    width:65%;
+    width:60%;
   float:left;
   height: 600px;
   padding-left: 10px;
+  border-radius: 5px;
+  margin: 5px;
+  border-right: solid 1px lightgrey;
+
 
  }
 
+ /** STYLES FOR CODE SNIPPETS**/ 
+code {
+    background-color: rgb(219, 210, 210);
+    color: black;
+    display: block;
+    text-align: left;
+    border-radius: 3px;
+   
+}
 
+
+/** MEDIA QUERES **/ 
+
+@media only screen and (max-width: 800px) {
+    .content {
+        display: block;
+        width: 100%;
+    }
+
+    #side-bar {
+        
+        display: block;
+        width: 100%;
+        float: none;
+      
+    }
+
+    button {
+        display: inherit;
+        text-align: center;
+}
+}

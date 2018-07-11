@@ -1,4 +1,7 @@
 
+// Imediately invokes function to highight introduction first
+openTopic(event,'introduction');
+
 
 // function execute when sidebar button is clicked
 function openTopic(evt,topic) {
