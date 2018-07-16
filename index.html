@@ -54,21 +54,51 @@
             </ul>
             <h6>Adding and Subtracting cells</h6>
             <code>
-                = A2 + b3
+                if A2=7 and B3=3
+                = A2 + B3
+                The formua above would equal 10.
             </code>
+            <h6>Mulitplying and Dividing cells</h6>
+            <p>To multiply in excel we use the "*" operator</p>
+            <code>
+                if A2=7 and B3=3
+                = A2 * B3
+                The formua above would equal 10.
+            </code>
+            <p>To divide in excel we use the "/" operator</p>
+            <code>
+                    if A2=7 and B3=3
+                    = A2/B3
+                    The formua above would equal 2.33.
+                </code>
 
     </div>
 
     <div class="content" id="vlookup">
         <h3>V-LookUPS</h3>
-        <p>
+        <p>V-Lookup is probably going to be one of the most used function. Vlookup allows you to grab data from another used and bring it into the current sheet that you are working on. Vlookup accomplishes this be utilizing a hook. 
         </p>
+        <p> the V-loop-up needs to 4 things:</p>
+        <ol>
+            <li>Hook or reference value</li>
+            <li>reference table </li>
+            <li>index column</li>
+            <li>True/False</li>
+        </ol>
+        <code> 
+            =VLOOKUP(A5,TABLEA5:C10,2,false)
+        </code>
+        <p>What this formual is doing is seeing if the value in cell A5 matches any cell in "Table" (our external Table sheet) if so its going to take the value thats 2 columns over and return it only if its an exact match.</p>
     </div>
 
     <div class="content" id="if">
         <h3>IF Statements</h3>
-        <p>
+        <p>The IF statement is very useful if you onlt want o calculation or return a value if a certain value meets a certain criteria
         </p>
+        
+        <code> 
+            =IF(A5=5,"I LOVE YOU","I HATE YOU")
+        </code>
     </div>
 
     <div class="content" id="sumif">
@@ -80,6 +110,7 @@
     <div class="content" id="conditional-formating">
         <h3>conditional-formating</h3>
         <p>
+        
         </p>
     </div>
 
